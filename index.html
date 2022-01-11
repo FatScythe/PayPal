@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PayPal</title>
+	<link rel="stylesheet" href="css/utilities.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<!-- -------------------Mobile Screen Only-------------- -->
+<section>
+
+	<div id="mobileApp" class="mobileapp">
+		<i onclick="cancel()" style="font-size: 25px;" class="fa fa-times-circle"></i>
+		<img src="image/paypal-logo2.png" alt="logo">
+		<p>Open in the new PayPal app</p>
+		<button class="btn">Open</button>
+	</div>
+</section>
+
+
+	<!-- ---------------header---------------- -->
+<section class="header flex bg-primary">
+
+	<!-- --------------tablet screen----------- -->
+
+	<nav class="menu" id="navLinks">
+		<span id="menu" class="hideMenu mx-3" onclick="hideMenu()" style="float: right; font-size: 30px;"><i class="fa fa-times-circle"></i></span>
+		<ul class="my-4">
+				<li><a href="#">PERSONAL</a></li>
+				<li><a href="#">BUSINESS</a></li>
+				<li><a href="#">DEVELOPER</a></li>
+				<li><a href="#">HELP</a></li>
+		</ul>
+
+		<button class="btn">Sign-Up</button>
+	</nav>
+	<button class="showMenu btn" onclick="showMenu()"><i class="fa fa-bars" style="font-size: 20px;"></i> Menu</button>
+
+
+	<div class="logo">
+		<a href="index.html"><img class="img1" src="image/paypal-logo.png" alt="logo"></a>
+		<a href="index.html"><img class="img2" src="image/paypal-logo2.png" alt="logo"></a> 
+	</div>
+
+
+	<div class="navbar">
+		<nav>
+			<ul>
+				<li><a href="#">PERSONAL</a></li>
+				<li><a href="#">BUSINESS</a></li>
+				<li><a href="#">DEVELOPER</a></li>
+				<li><a href="#">HELP</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="button">
+		<button class="btn">Log-In</button>
+		<button class="btn">Sign-Up</button>
+	</div>
+
+</section>
+
+<!-- -------------------Mobile Screen HERO-------------- -->
+
+<section class="mhero grid bg-secondary text-left">
+	<div class="grid-item">
+		<h1 class="lg my-3 text-left">The New <br>PayPal app is<br> here</h1><br>
+		<button class="btn">Get the app</button><br><br>
+		<p class="paragraph1 text-left"><a href="#">Learn more about the new<br> feautures <i class="fa fa-long-arrow-right"><span class="circle"></span></i></a></p>
+	</div><br><br>
+
+	<div class="grid-item">
+		<img src="image/mHero.png" alt="hero">
+	</div>
+</section>
+
+<!-- ---------------HERO---------------- -->
+
+<section class="hero grid bg-primary text-left">
+	<div class="grid-item">
+		<h1 class="lg my-3">You could earn<br> a £5 reward</h1><br>
+		<p class="paragraph1">Simply sign up for an account, making sure you add a payment method at the same time. You’ll receive a £5 reward within 10 days. Then spend £10 using PayPal and the reward will be applied at checkout.</p><br>
+		<button class="btn">Sign-Up</button><br><br>
+		<p class="paragraph2">Offer may be cancelled or modified at any time.<br> Reward expires 30 days from sign up. Terms apply.</p>
+	</div>
+
+	<div class="grid-item">
+		<img src="image/Hero.png" alt="hero">
+	</div>
+</section>
+
+	<!-- ----------------SUB_HEADER------------ -->
+
+<section class="sub-header grid">
+	<p>Looking for PayPal Business?<span> Whether you're local or global, we're here to support you?</span></p>
+	<button class="btn" style="align-self: center;">PayPal for Business</button>
+</section>
+
+	<!-- ----------------CRYPTO------------ -->
+
+<section class="crypto bg-primary">
+	<div class="grid item">
+		<img src="image/pic1.png" alt="crypto">
+	</div>
+
+	<div class="grid-item">
+		<h1>Crypto with PayPal is here</h1>
+		<p class="paragraph1">
+			Discover crypto at your own pace with PayPal. Buy, hold and sell crypto assets. Buy as little as £1 of crypto.*
+		</p>
+
+		<button class="btn">Find Out More</button>
+
+		<p class="paragraph2">
+			*PayPal account required. Terms apply. The value of cryptocurrency can rise or fall suddenly so you can lose money just as easily as you can make it. We recommend doing your research and consider the risks before buying. PayPal’s cryptocurrency service is not regulated by the UK Financial Conduct Authority or the Luxembourg Commission de Surveillance Du Secteur Financier.
+		</p>
+	</div>
+	
+</section>
+
+	<!-- ----------------LATER------------ -->
+
+<section class="later">
+	<div class="flex-item">
+		<h1>Pay Later with PayPal Pay in 3</h1>
+
+		<p class="paragraph1">
+			Split purchases into three interest-free monthly payments at millions of stores online.
+		</p>
+
+		<a href="#">Find Out More</a>
+
+		<p class="paragraph2">
+			Subject to status. UK residents only. PayPal is a responsible lender. Pay in 3 performance may influence your credit score. T&Cs apply.
+		</p>
+	</div>
+
+	<div class="flex-item">
+		<img src="image/pic2.png" alt="pay later">
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ------------------JavaScript for toggle menu------------- -->
+	<script>
+
+		var navLinks = document.getElementById('navLinks');
+
+		function showMenu(){ 
+			navLinks.style.left = "0";
+			
+		}
+
+		function hideMenu(){ 
+			navLinks.style.left = "-50%";
+			
+		}
+
+		function cancel() {
+			document.getElementById('mobileApp').style.display = "none";
+		}
+
+	</script>
+	<noscript>
+		This browser does not support JavaScript :-(
+	</noscript>
+
+</body>
+</html>
