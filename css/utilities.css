@@ -2,7 +2,6 @@
 .bg-primary {
 	background: var(--gray);
 	color: var(--black);
-	box-shadow: 8px 0px 8px  rgba(0,0,0,0.2);
 }
 
 .bg-secondary {
