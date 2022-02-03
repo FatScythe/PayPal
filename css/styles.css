@@ -16,7 +16,10 @@ html {
 	padding: 0;
 	font-family: "Open sans", sans-serif;
 	box-sizing: border-box;
-	/*border: 1px solid red;*/
+}
+
+section * {
+	width: fit-content;
 }
 /*--------Mobileapp Screen Only--------*/
 .mobileapp {
