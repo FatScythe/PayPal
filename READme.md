@@ -12,6 +12,6 @@ ____
 ___
 
 #### Design image :
-![Paypal SS](paypal.png "Desktop View")
+![Paypal SS](image/paypal.png "Desktop View")
 
 #### Credits: Esther Moghalu (8th Gear).
